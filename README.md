@@ -73,6 +73,24 @@ Given I am on the product details page for a specific dress
  Then I should see a message indicating the size is unavailable
 Note:Not able to automated thid scenario
 
+
+
+
+<img width="866" alt="Screenshot 2024-07-19 181743" src="https://github.com/user-attachments/assets/fdc7e739-858b-4a5c-8b11-58d5cbde71f3">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  Scenario: Select a random sort option from available options (Array) 
 Given I am on the search results page for "Watches"
  When I get all available sort options (e.g., Price - Low to High) and store them in an array
