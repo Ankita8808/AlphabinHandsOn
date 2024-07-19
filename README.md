@@ -18,8 +18,8 @@ Prerequisites
 
 Repository
 
-git clone https://github.com/Ankita8808/Alphabet.git
-cd Alphabet
+git clone https://github.com/Ankita8808/alphabinHandsOn.git
+cd alphabinHandsOn
 
 Scenario
  Search for unavailable size (Negative) 
