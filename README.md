@@ -1,4 +1,4 @@
-"#AlphabinHandsOn" 
+<img width="461" alt="Screenshot 2024-07-19 180822" src="https://github.com/user-attachments/assets/eeeb92eb-ab2b-4e49-8807-9fe0ed5f3468">"#AlphabinHandsOn" 
 This project is a Selenium-based web automation framework that uses Cucumber BDD for testing the Myntra website. It includes features like browsing through product categories, checking for unavailable sizes, and more.
 
 Features
@@ -58,13 +58,33 @@ Set up Cucumber feature files and step definitions.
 Configured the Cucumber runner class for executing tests.
 
 Write test cases:
-Create test classes in the src/test/java/ directory.
-Write TestNG test methods to validate each functionality.
-Run the tests
-Execute the test cases using TestNG.
-Capture screenshots
-Implement code to capture screenshots for each test case.
+Scenario: Browse through different product categories (Positive) 
+Given I am on the Myntra homepage
+ When I navigate to the "Women's Clothing" category
+ Then I should see a list of subcategories (e.g., Dresses, Tops, etc.)
+ When I navigate to a specific subcategory (e.g., Dresses)
+ Then I should see a list of available dresses
+ Status: Pass
 
+Scenario: Search for unavailable size (Negative) 
+Given I am on the product details page for a specific dress
+ When I try to select a size that is out of stock
+ Then I should see a message indicating the size is unavailable
+ status:Not able to perform
+
+
+
+
+
+
+
+ 
+
+ Scenario: Iterate through product pages on a search result (Loop) 
+ Given I am on the search results page for "Men's Shoes"
+ When I iterate through the first 3 product pages on the search results
+ Then for each product page, I should be able to view product details (name, price, etc.)
+ Status:Pass
 
 Challenges and Deviations:
 
