@@ -55,12 +55,10 @@ Create the SearchResultsPage class with methods for interacting with the web ele
 Write test cases:
 Create test classes in the src/test/java/ directory.
 Write TestNG test methods to validate each functionality.
-Run the tests:
+Run the tests
 Execute the test cases using TestNG.
-Capture screenshots:
+Capture screenshots
 Implement code to capture screenshots for each test case.
-Save the screenshots in the screenshots directory.
-Document the results:
 
 
 Challenges and Deviations:
