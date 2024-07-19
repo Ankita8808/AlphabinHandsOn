@@ -45,12 +45,17 @@ Given I am on the Myntra homepage
 
  Integration Process
 
-Setup the project:
+Integration Process
 
-Create a Maven project and add dependencies for Selenium and TestNG in the pom.xml file.
-Implement the Page Object Model (POM):
-
-Create the SearchResultsPage class with methods for interacting with the web elements.
+Project Setup:
+Created a new Maven project.
+Added necessary dependencies in the pom.xml file
+Framework Structure:
+Implemented the Page Object Model (POM) for better code management.
+Created separate packages for test cases, page objects, utilities, and configurations.
+Cucumber Integration:
+Set up Cucumber feature files and step definitions.
+Configured the Cucumber runner class for executing tests.
 
 Write test cases:
 Create test classes in the src/test/java/ directory.
